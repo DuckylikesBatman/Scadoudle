@@ -4,6 +4,12 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Shop — SCADOUDLE</title>
+  <meta name="description" content="Shop the Scadoudle SS '26 drop — Nike, Jordan, Adidas, New Balance. Filter by brand and quick-add to bag."/>
+  <meta property="og:title" content="Shop — SCADOUDLE"/>
+  <meta property="og:description" content="All gear — curated sneakers and filters by brand."/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -11,6 +17,7 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
 
@@ -24,7 +31,7 @@
   </div>
 </nav>
 
-<main class="page">
+<main id="main" class="page">
   <div class="page__head">
     <p class="page__label">Shop</p>
     <h1 class="page__title">ALL<br><span class="ghost">GEAR</span></h1>
@@ -36,8 +43,8 @@
   </div>
 
   <div class="page__body">
-    <section class="section" style="padding-top:0;padding-left:0;padding-right:0" aria-labelledby="shop-grid-title">
-      <h2 class="section-title" id="shop-grid-title" style="font-size:clamp(2rem,4vw,3rem);margin-bottom:32px">THE DROP</h2>
+    <section class="section shop-section" aria-labelledby="shop-grid-title">
+      <h2 class="section-title shop-title" id="shop-grid-title">THE DROP</h2>
       <div class="filter-bar" role="group" aria-label="Filter by brand">
         <button type="button" class="filter-btn active" data-filter="all">All</button>
         <button type="button" class="filter-btn" data-filter="nike">Nike</button>
@@ -47,7 +54,7 @@
       </div>
       <div class="products-grid" id="products-grid">
 
-        <article class="p-card" data-brand="nike">
+        <article class="p-card" data-brand="nike" data-product-id="nike-af1-black" data-price="200">
           <div class="p-card__top" data-icon="👟">
             <img class="p-card__img" src="images/featured/pair-1.jpg" alt="Black Air Force 1" onerror="this.style.display='none'">
             <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
@@ -67,9 +74,9 @@
           </div>
         </article>
 
-        <article class="p-card" data-brand="jordan">
+        <article class="p-card" data-brand="jordan" data-product-id="jordan-aj1-beige" data-price="180">
           <div class="p-card__top" data-icon="🏀">
-            <img class="p-card__img" src="images/featured/pair-2 .jpg" alt="Beige Jordan 1" onerror="this.style.display='none'">
+            <img class="p-card__img" src="images/featured/pair-2.jpg" alt="Beige Jordan 1" loading="lazy" onerror="this.style.display='none'">
             <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
             <button type="button" class="p-card__wish" aria-label="Wishlist">♡</button>
             <div class="p-card__colors">
@@ -87,7 +94,7 @@
           </div>
         </article>
 
-        <article class="p-card" data-brand="adidas">
+        <article class="p-card" data-brand="adidas" data-product-id="adidas-ultra-cream" data-price="165">
           <div class="p-card__top" data-icon="⚡">
             <img class="p-card__img" src="images/featured/pair-3.jpg" alt="Cream Ultra Boost" onerror="this.style.display='none'">
             <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
@@ -107,7 +114,7 @@
           </div>
         </article>
 
-        <article class="p-card" data-brand="nb">
+        <article class="p-card" data-brand="nb" data-product-id="nb-574-olive" data-price="210">
           <div class="p-card__top" data-icon="🌿">
             <img class="p-card__img" src="images/featured/pair-4.jpg" alt="Olive 574" onerror="this.style.display='none'">
             <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
@@ -179,6 +186,7 @@
 <script src="js/cursor.js" defer></script>
 <script src="js/toast.js" defer></script>
 <script src="js/featured.js" defer></script>
+<script src="js/cart.js" defer></script>
 <script src="js/quick-add.js" defer></script>
 <script src="js/newsletter.js" defer></script>
 <script src="js/contact.js" defer></script>

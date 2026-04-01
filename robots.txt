@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Update the URL when you deploy (GitHub Pages example)
+Sitemap: https://duckylikesbatman.github.io/Scadoudle/sitemap.xml

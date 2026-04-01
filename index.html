@@ -4,6 +4,12 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>SCADOUDLE — Built to Move</title>
+  <meta name="description" content="Scadoudle SS '26 — premium sneakers built to move. Shop the drop, watch the film, find our stores."/>
+  <meta property="og:title" content="SCADOUDLE — Built to Move"/>
+  <meta property="og:description" content="Premium kicks for those who never stand still. Shop SS '26."/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -11,6 +17,7 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
 
@@ -24,6 +31,8 @@
     <a class="nav__cta" href="shop.html">Shop Now ↗</a>
   </div>
 </nav>
+
+<main id="main">
 
 <!-- HERO -->
 <header>
@@ -53,7 +62,7 @@
         <img src="images/hero-bg-8.png" alt="" onerror="this.style.opacity='0'">
       </div>
       <div class="mosaic-cell">
-        <img src="images/hero-bg-7.png" alt="" onerror="this.style.opacity='0'">
+        <img src="images/hero-bg-4.png" alt="" onerror="this.style.opacity='0'">
         <span class="mosaic-cell__badge">Best Seller</span>
       </div>
     </div>
@@ -89,11 +98,11 @@
   </div>
   <div class="products-grid" id="products-grid">
 
-    <article class="p-card" data-brand="nike">
+    <article class="p-card" data-brand="nike" data-product-id="nike-af1-black" data-price="200">
       <div class="p-card__top" data-icon="👟">
         <img class="p-card__img" src="images/featured/pair-1.jpg" alt="Black Air Force 1" onerror="this.style.display='none'">
         <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
-        <button class="p-card__wish" aria-label="Wishlist">♡</button>
+        <button type="button" class="p-card__wish" aria-label="Wishlist">♡</button>
         <div class="p-card__colors">
           <span class="swatch" style="background:#111"></span>
           <span class="swatch" style="background:#eee"></span>
@@ -109,11 +118,11 @@
       </div>
     </article>
 
-    <article class="p-card" data-brand="jordan">
+    <article class="p-card" data-brand="jordan" data-product-id="jordan-aj1-beige" data-price="180">
       <div class="p-card__top" data-icon="🏀">
-        <img class="p-card__img" src="images/featured/pair-2 .jpg" alt="Beige Jordan 1" onerror="this.style.display='none'">
+        <img class="p-card__img" src="images/featured/pair-2.jpg" alt="Beige Jordan 1" loading="lazy" onerror="this.style.display='none'">
         <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
-        <button class="p-card__wish" aria-label="Wishlist">♡</button>
+        <button type="button" class="p-card__wish" aria-label="Wishlist">♡</button>
         <div class="p-card__colors">
           <span class="swatch" style="background:#d4b896"></span>
           <span class="swatch" style="background:#8b6f47"></span>
@@ -129,11 +138,11 @@
       </div>
     </article>
 
-    <article class="p-card" data-brand="adidas">
+    <article class="p-card" data-brand="adidas" data-product-id="adidas-ultra-cream" data-price="165">
       <div class="p-card__top" data-icon="⚡">
         <img class="p-card__img" src="images/featured/pair-3.jpg" alt="Cream Ultra Boost" onerror="this.style.display='none'">
         <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
-        <button class="p-card__wish" aria-label="Wishlist">♡</button>
+        <button type="button" class="p-card__wish" aria-label="Wishlist">♡</button>
         <div class="p-card__colors">
           <span class="swatch" style="background:#f5f0e8"></span>
           <span class="swatch" style="background:#c8f135"></span>
@@ -149,11 +158,11 @@
       </div>
     </article>
 
-    <article class="p-card" data-brand="nb">
+    <article class="p-card" data-brand="nb" data-product-id="nb-574-olive" data-price="210">
       <div class="p-card__top" data-icon="🌿">
         <img class="p-card__img" src="images/featured/pair-4.jpg" alt="Olive 574" onerror="this.style.display='none'">
         <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
-        <button class="p-card__wish" aria-label="Wishlist">♡</button>
+        <button type="button" class="p-card__wish" aria-label="Wishlist">♡</button>
         <div class="p-card__colors">
           <span class="swatch" style="background:#5a6b47"></span>
           <span class="swatch" style="background:#8a9b72"></span>
@@ -250,6 +259,8 @@
   </div>
 </div>
 
+</main>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer__top">
@@ -298,6 +309,7 @@
 <script src="js/cursor.js" defer></script>
 <script src="js/toast.js" defer></script>
 <script src="js/featured.js" defer></script>
+<script src="js/cart.js" defer></script>
 <script src="js/quick-add.js" defer></script>
 <script src="js/newsletter.js" defer></script>
 <script src="js/contact.js" defer></script>
