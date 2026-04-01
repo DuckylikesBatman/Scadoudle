@@ -1,6 +1,4 @@
-
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -18,12 +16,12 @@
 
 <!-- NAV -->
 <nav class="nav" aria-label="Main navigation">
-  <a  class="nav__logo"><img src="images/logo.png" alt="Scadoudle"></a>
+  <a href="index.html" class="nav__logo"><img src="images/logo.png" alt="Scadoudle"></a>
   <p class="nav__center" aria-hidden="true">SS '26 Collection — Now Live</p>
   <div class="nav__right">
-    <a class="nav__link" href="#">Shop</a>
-    <a class="nav__link" href="#">About</a>
-    <a class="nav__cta" href="#">Shop Now ↗</a>
+    <a class="nav__link" href="shop.html">Shop</a>
+    <a class="nav__link" href="about.html">About</a>
+    <a class="nav__cta" href="shop.html">Shop Now ↗</a>
   </div>
 </nav>
 
@@ -37,8 +35,8 @@
       </h1>
       <p class="hero__sub">Premium kicks for those who never stand still. From the street to the stage — Scadoudle is the only pair you need.</p>
       <div class="hero__actions">
-        <a class="btn-primary" href="#">Shop Collection →</a>
-        <a class="btn-ghost" href="#">Watch Film</a>
+        <a class="btn-primary" href="#featured">Shop Collection →</a>
+        <a class="btn-ghost" href="film.html">Watch Film</a>
       </div>
       <div class="hero__stats">
         <div><div class="stat__num">5<span>K+</span></div><div class="stat__label">Pairs Sold</div></div>
@@ -79,15 +77,15 @@
 </div>
 
 <!-- FEATURED -->
-<section class="section" aria-labelledby="featured-title">
+<section class="section" id="featured" aria-labelledby="featured-title">
   <p class="section-label">02 — Featured</p>
   <h2 class="section-title" id="featured-title">THE DROP<br><span class="ghost">COLLECTION</span></h2>
   <div class="filter-bar" role="group" aria-label="Filter by brand">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="nike">Nike</button>
-    <button class="filter-btn" data-filter="jordan">Jordan</button>
-    <button class="filter-btn" data-filter="adidas">Adidas</button>
-    <button class="filter-btn" data-filter="nb">New Balance</button>
+    <button type="button" class="filter-btn active" data-filter="all">All</button>
+    <button type="button" class="filter-btn" data-filter="nike">Nike</button>
+    <button type="button" class="filter-btn" data-filter="jordan">Jordan</button>
+    <button type="button" class="filter-btn" data-filter="adidas">Adidas</button>
+    <button type="button" class="filter-btn" data-filter="nb">New Balance</button>
   </div>
   <div class="products-grid" id="products-grid">
 
@@ -194,7 +192,7 @@
   <p class="section-label">03 — Stores</p>
   <h2 class="section-title" id="stores-title">FIND<br><span class="ghost">US HERE</span></h2>
   <div class="loc-grid">
-    <a class="loc-card" href="#" aria-label="Beirut store">
+    <a class="loc-card" href="stores.html#beirut" aria-label="Beirut store">
       <img class="loc-card__img" src="images/beirut-loc.jpg" alt="" onerror="this.style.opacity='0'">
       <div class="loc-card__grad"></div>
       <div class="loc-card__body">
@@ -204,7 +202,7 @@
       </div>
       <span class="loc-card__arrow" aria-hidden="true">↗</span>
     </a>
-    <a class="loc-card" href="#" aria-label="Dubai store">
+    <a class="loc-card" href="stores.html#dubai" aria-label="Dubai store">
       <img class="loc-card__img" src="images/dubai-loc.jpg" alt="" onerror="this.style.opacity='0'">
       <div class="loc-card__grad"></div>
       <div class="loc-card__body">
@@ -214,7 +212,7 @@
       </div>
       <span class="loc-card__arrow" aria-hidden="true">↗</span>
     </a>
-    <a class="loc-card" href="#" aria-label="Paris store">
+    <a class="loc-card" href="stores.html#paris" aria-label="Paris store">
       <img class="loc-card__img" src="images/paris-loc.jpg" alt="" onerror="this.style.opacity='0'">
       <div class="loc-card__grad"></div>
       <div class="loc-card__body">
@@ -224,7 +222,7 @@
       </div>
       <span class="loc-card__arrow" aria-hidden="true">↗</span>
     </a>
-    <a class="loc-card" href="#" aria-label="Madrid store">
+    <a class="loc-card" href="stores.html#madrid" aria-label="Madrid store">
       <img class="loc-card__img" src="images/madrid-loc.jpg" alt="" onerror="this.style.opacity='0'">
       <div class="loc-card__grad"></div>
       <div class="loc-card__body">
@@ -248,7 +246,7 @@
       <input class="newsletter__input" type="email" placeholder="your@email.com" aria-label="Email address">
       <button class="newsletter__submit" type="button">Subscribe →</button>
     </div>
-    <p style="font-family:var(--font-mono);font-size:.58rem;color:rgba(0,0,0,.4);letter-spacing:.1em;margin-top:10px">No spam. Unsubscribe anytime.</p>
+    <p class="newsletter__fine">No spam. Unsubscribe anytime.</p>
   </div>
 </div>
 
@@ -256,96 +254,53 @@
 <footer>
   <div class="footer__top">
     <div>
-      <div class="footer__brand">SCAD<span>.</span></div>
+      <a href="index.html" class="footer__brand">SCAD<span>.</span></a>
       <p class="footer__desc">Premium sneakers for those who move through the world on their own terms. Built different. Styled to stand out.</p>
     </div>
     <div>
       <p class="footer__col-title">Shop</p>
       <div class="footer__links">
-        <a class="footer__link" href="#">New Arrivals</a>
-        <a class="footer__link" href="#">Best Sellers</a>
-        <a class="footer__link" href="#">Sale</a>
-        <a class="footer__link" href="#">All Products</a>
+        <a class="footer__link" href="new-arrivals.html">New Arrivals</a>
+        <a class="footer__link" href="best-sellers.html">Best Sellers</a>
+        <a class="footer__link" href="sale.html">Sale</a>
+        <a class="footer__link" href="shop.html">All Products</a>
       </div>
     </div>
     <div>
       <p class="footer__col-title">Info</p>
       <div class="footer__links">
-        <a class="footer__link" href="#">About Us</a>
-        <a class="footer__link" href="#">Store Locations</a>
-        <a class="footer__link" href="#">Careers</a>
-        <a class="footer__link" href="#">Press</a>
+        <a class="footer__link" href="about.html">About Us</a>
+        <a class="footer__link" href="stores.html">Store Locations</a>
+        <a class="footer__link" href="careers.html">Careers</a>
+        <a class="footer__link" href="press.html">Press</a>
       </div>
     </div>
     <div>
       <p class="footer__col-title">Help</p>
       <div class="footer__links">
-        <a class="footer__link" href="#">Shipping & Returns</a>
-        <a class="footer__link" href="#">Size Guide</a>
-        <a class="footer__link" href="#">Contact</a>
-        <a class="footer__link" href="#">FAQ</a>
+        <a class="footer__link" href="shipping.html">Shipping & Returns</a>
+        <a class="footer__link" href="size-guide.html">Size Guide</a>
+        <a class="footer__link" href="contact.html">Contact</a>
+        <a class="footer__link" href="faq.html">FAQ</a>
       </div>
     </div>
   </div>
   <div class="footer__bottom">
     <p class="footer__copy">© 2026 Scadoudle. All rights reserved.</p>
     <div class="footer__socials">
-      <a class="footer__social" href="#" aria-label="Instagram">ig</a>
-      <a class="footer__social" href="#" aria-label="TikTok">tt</a>
-      <a class="footer__social" href="#" aria-label="X">𝕏</a>
+      <a class="footer__social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+      <a class="footer__social" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">tt</a>
+      <a class="footer__social" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
     </div>
   </div>
 </footer>
 
-<script>
-/* Custom cursor */
-const cur = document.getElementById('cursor');
-const ring = document.getElementById('cursor-ring');
-let mx=0, my=0, rx=0, ry=0;
-document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY });
-(function tick() {
-  rx += (mx-rx)*.13; ry += (my-ry)*.13;
-  cur.style.cssText  += `;left:${mx}px;top:${my}px`;
-  ring.style.cssText += `;left:${rx}px;top:${ry}px`;
-  requestAnimationFrame(tick);
-})();
-document.querySelectorAll('a,button').forEach(el => {
-  el.addEventListener('mouseenter', ()=> cur.classList.add('big'));
-  el.addEventListener('mouseleave', ()=> cur.classList.remove('big'));
-});
-
-/* Filter tabs */
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const f = btn.dataset.filter;
-    document.querySelectorAll('.p-card').forEach(card => {
-      card.style.display = (f==='all' || card.dataset.brand===f) ? '' : 'none';
-    });
-  });
-});
-
-/* Scroll reveal */
-const io = new IntersectionObserver(entries => {
-  entries.forEach((e,i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 90);
-      io.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08 });
-document.querySelectorAll('.p-card').forEach(c => io.observe(c));
-
-/* Wishlist toggle */
-document.querySelectorAll('.p-card__wish').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.preventDefault();
-    const on = btn.textContent === '♥';
-    btn.textContent = on ? '♡' : '♥';
-    btn.style.color = on ? '' : '#ff3628';
-  });
-});
-</script>
+<script src="js/cursor.js" defer></script>
+<script src="js/toast.js" defer></script>
+<script src="js/featured.js" defer></script>
+<script src="js/quick-add.js" defer></script>
+<script src="js/newsletter.js" defer></script>
+<script src="js/contact.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

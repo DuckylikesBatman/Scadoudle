@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Shop — SCADOUDLE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav class="nav" aria-label="Main navigation">
+  <a href="index.html" class="nav__logo"><img src="images/logo.png" alt="Scadoudle"></a>
+  <p class="nav__center" aria-hidden="true">SS '26 Collection — Now Live</p>
+  <div class="nav__right">
+    <a class="nav__link" href="shop.html">Shop</a>
+    <a class="nav__link" href="about.html">About</a>
+    <a class="nav__cta" href="shop.html">Shop Now ↗</a>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="page__head">
+    <p class="page__label">Shop</p>
+    <h1 class="page__title">ALL<br><span class="ghost">GEAR</span></h1>
+    <p class="page__lead">Every pair is hand-picked for fit, materials, and street cred. Filter by brand or grab the whole drop.</p>
+    <div class="page__actions">
+      <a class="btn-primary" href="new-arrivals.html">New arrivals →</a>
+      <a class="btn-ghost" href="index.html">Back home</a>
+    </div>
+  </div>
+
+  <div class="page__body">
+    <section class="section" style="padding-top:0;padding-left:0;padding-right:0" aria-labelledby="shop-grid-title">
+      <h2 class="section-title" id="shop-grid-title" style="font-size:clamp(2rem,4vw,3rem);margin-bottom:32px">THE DROP</h2>
+      <div class="filter-bar" role="group" aria-label="Filter by brand">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="nike">Nike</button>
+        <button type="button" class="filter-btn" data-filter="jordan">Jordan</button>
+        <button type="button" class="filter-btn" data-filter="adidas">Adidas</button>
+        <button type="button" class="filter-btn" data-filter="nb">New Balance</button>
+      </div>
+      <div class="products-grid" id="products-grid">
+
+        <article class="p-card" data-brand="nike">
+          <div class="p-card__top" data-icon="👟">
+            <img class="p-card__img" src="images/featured/pair-1.jpg" alt="Black Air Force 1" onerror="this.style.display='none'">
+            <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
+            <button type="button" class="p-card__wish" aria-label="Wishlist">♡</button>
+            <div class="p-card__colors">
+              <span class="swatch" style="background:#111"></span>
+              <span class="swatch" style="background:#eee"></span>
+            </div>
+          </div>
+          <div class="p-card__body">
+            <p class="p-card__brand">Nike</p>
+            <h3 class="p-card__name">Black Air Force 1</h3>
+            <div class="p-card__foot">
+              <span class="p-card__price">$200</span>
+              <span class="p-card__rating"><span>★★★★</span>☆ 4.0</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-card" data-brand="jordan">
+          <div class="p-card__top" data-icon="🏀">
+            <img class="p-card__img" src="images/featured/pair-2 .jpg" alt="Beige Jordan 1" onerror="this.style.display='none'">
+            <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
+            <button type="button" class="p-card__wish" aria-label="Wishlist">♡</button>
+            <div class="p-card__colors">
+              <span class="swatch" style="background:#d4b896"></span>
+              <span class="swatch" style="background:#8b6f47"></span>
+            </div>
+          </div>
+          <div class="p-card__body">
+            <p class="p-card__brand">Jordan</p>
+            <h3 class="p-card__name">Beige Jordan 1</h3>
+            <div class="p-card__foot">
+              <span class="p-card__price">$180</span>
+              <span class="p-card__rating"><span>★★★★★</span> 5.0</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-card" data-brand="adidas">
+          <div class="p-card__top" data-icon="⚡">
+            <img class="p-card__img" src="images/featured/pair-3.jpg" alt="Cream Ultra Boost" onerror="this.style.display='none'">
+            <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
+            <button type="button" class="p-card__wish" aria-label="Wishlist">♡</button>
+            <div class="p-card__colors">
+              <span class="swatch" style="background:#f5f0e8"></span>
+              <span class="swatch" style="background:#c8f135"></span>
+            </div>
+          </div>
+          <div class="p-card__body">
+            <p class="p-card__brand">Adidas</p>
+            <h3 class="p-card__name">Cream Ultra Boost</h3>
+            <div class="p-card__foot">
+              <span class="p-card__price">$165</span>
+              <span class="p-card__rating"><span>★★★★</span>☆ 4.2</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-card" data-brand="nb">
+          <div class="p-card__top" data-icon="🌿">
+            <img class="p-card__img" src="images/featured/pair-4.jpg" alt="Olive 574" onerror="this.style.display='none'">
+            <div class="p-card__overlay"><span class="p-card__quick">Quick Add +</span></div>
+            <button type="button" class="p-card__wish" aria-label="Wishlist">♡</button>
+            <div class="p-card__colors">
+              <span class="swatch" style="background:#5a6b47"></span>
+              <span class="swatch" style="background:#8a9b72"></span>
+            </div>
+          </div>
+          <div class="p-card__body">
+            <p class="p-card__brand">New Balance</p>
+            <h3 class="p-card__name">Olive 574</h3>
+            <div class="p-card__foot">
+              <span class="p-card__price">$210</span>
+              <span class="p-card__rating"><span>★★★★★</span> 4.8</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="footer__top">
+    <div>
+      <a href="index.html" class="footer__brand">SCAD<span>.</span></a>
+      <p class="footer__desc">Premium sneakers for those who move through the world on their own terms. Built different. Styled to stand out.</p>
+    </div>
+    <div>
+      <p class="footer__col-title">Shop</p>
+      <div class="footer__links">
+        <a class="footer__link" href="new-arrivals.html">New Arrivals</a>
+        <a class="footer__link" href="best-sellers.html">Best Sellers</a>
+        <a class="footer__link" href="sale.html">Sale</a>
+        <a class="footer__link" href="shop.html">All Products</a>
+      </div>
+    </div>
+    <div>
+      <p class="footer__col-title">Info</p>
+      <div class="footer__links">
+        <a class="footer__link" href="about.html">About Us</a>
+        <a class="footer__link" href="stores.html">Store Locations</a>
+        <a class="footer__link" href="careers.html">Careers</a>
+        <a class="footer__link" href="press.html">Press</a>
+      </div>
+    </div>
+    <div>
+      <p class="footer__col-title">Help</p>
+      <div class="footer__links">
+        <a class="footer__link" href="shipping.html">Shipping & Returns</a>
+        <a class="footer__link" href="size-guide.html">Size Guide</a>
+        <a class="footer__link" href="contact.html">Contact</a>
+        <a class="footer__link" href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2026 Scadoudle. All rights reserved.</p>
+    <div class="footer__socials">
+      <a class="footer__social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+      <a class="footer__social" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">tt</a>
+      <a class="footer__social" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/cursor.js" defer></script>
+<script src="js/toast.js" defer></script>
+<script src="js/featured.js" defer></script>
+<script src="js/quick-add.js" defer></script>
+<script src="js/newsletter.js" defer></script>
+<script src="js/contact.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
