@@ -4,6 +4,12 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Stores — SCADOUDLE</title>
+  <meta name="description" content="Scadoudle stores in Beirut, Dubai, Paris, and Madrid — hours, contact, and links."/>
+  <meta property="og:title" content="Stores — SCADOUDLE"/>
+  <meta property="og:description" content="Find us in four cities worldwide."/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -11,6 +17,7 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
 
@@ -24,7 +31,7 @@
   </div>
 </nav>
 
-<main class="page">
+<main id="main" class="page">
   <div class="page__head">
     <p class="page__label">Stores</p>
     <h1 class="page__title">FIND<br><span class="ghost">US HERE</span></h1>
@@ -37,7 +44,7 @@
         <h2 class="store-block__city">Beirut</h2>
         <div class="store-block__meta">
           <p>Hamra District · Open daily 10:00–21:00</p>
-          <p>Phone +961 1 234 567 · <a href="mailto:beirut@scadoudle.com" style="color:var(--lime)">beirut@scadoudle.com</a></p>
+          <p>Phone +961 1 234 567 · <a class="link-accent" href="mailto:beirut@scadoudle.com">beirut@scadoudle.com</a></p>
         </div>
       </article>
       <article id="dubai" class="store-block">
@@ -45,7 +52,7 @@
         <h2 class="store-block__city">Dubai</h2>
         <div class="store-block__meta">
           <p>Downtown · Open daily 11:00–22:00</p>
-          <p>Phone +971 4 234 5678 · <a href="mailto:dubai@scadoudle.com" style="color:var(--lime)">dubai@scadoudle.com</a></p>
+          <p>Phone +971 4 234 5678 · <a class="link-accent" href="mailto:dubai@scadoudle.com">dubai@scadoudle.com</a></p>
         </div>
       </article>
       <article id="paris" class="store-block">
@@ -53,7 +60,7 @@
         <h2 class="store-block__city">Paris</h2>
         <div class="store-block__meta">
           <p>Le Marais · Tue–Sun 11:00–20:00</p>
-          <p>Phone +33 1 23 45 67 89 · <a href="mailto:paris@scadoudle.com" style="color:var(--lime)">paris@scadoudle.com</a></p>
+          <p>Phone +33 1 23 45 67 89 · <a class="link-accent" href="mailto:paris@scadoudle.com">paris@scadoudle.com</a></p>
         </div>
       </article>
       <article id="madrid" class="store-block">
@@ -61,11 +68,11 @@
         <h2 class="store-block__city">Madrid</h2>
         <div class="store-block__meta">
           <p>Malasaña · Open daily 10:00–21:00</p>
-          <p>Phone +34 91 234 56 78 · <a href="mailto:madrid@scadoudle.com" style="color:var(--lime)">madrid@scadoudle.com</a></p>
+          <p>Phone +34 91 234 56 78 · <a class="link-accent" href="mailto:madrid@scadoudle.com">madrid@scadoudle.com</a></p>
         </div>
       </article>
     </div>
-    <div class="page__actions" style="margin-top:48px">
+    <div class="page__actions page__actions--spacious">
       <a class="btn-primary" href="shop.html">Shop online →</a>
       <a class="btn-ghost" href="contact.html">Questions? Contact</a>
     </div>
@@ -119,6 +126,7 @@
 <script src="js/cursor.js" defer></script>
 <script src="js/toast.js" defer></script>
 <script src="js/featured.js" defer></script>
+<script src="js/cart.js" defer></script>
 <script src="js/quick-add.js" defer></script>
 <script src="js/newsletter.js" defer></script>
 <script src="js/contact.js" defer></script>
