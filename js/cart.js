@@ -16,7 +16,7 @@
     const id =
       card.dataset.productId?.trim() ||
       slugify(`${brand}-${name}`);
-    const price = parseFloat(card.dataset.price || '0', 10);
+    const price = parseFloat(card.dataset.price || '0');
     const image = card.querySelector('.p-card__img')?.getAttribute('src') || '';
     return { id, name, brand, price: Number.isFinite(price) ? price : 0, image };
   }

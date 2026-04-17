@@ -16,8 +16,10 @@ function initCursor() {
   (function tick() {
     rx += (mx - rx) * 0.13;
     ry += (my - ry) * 0.13;
-    cur.style.cssText += `;left:${mx}px;top:${my}px`;
-    ring.style.cssText += `;left:${rx}px;top:${ry}px`;
+    cur.style.left = `${mx}px`;
+    cur.style.top = `${my}px`;
+    ring.style.left = `${rx}px`;
+    ring.style.top = `${ry}px`;
     requestAnimationFrame(tick);
   })();
 

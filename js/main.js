@@ -15,9 +15,9 @@ function initCurrentNav() {
 initCart();
 initCurrentNav();
 initCursor();
-initProductFilters();
-initScrollReveal();
-initWishlist();
-initQuickAdd();
-initNewsletter();
-initContact();
+if (typeof initProductFilters === 'function') initProductFilters();
+if (typeof initScrollReveal === 'function') initScrollReveal();
+if (typeof initWishlist === 'function') initWishlist();
+if (typeof initQuickAdd === 'function') initQuickAdd();
+if (typeof initNewsletter === 'function') initNewsletter();
+if (typeof initContact === 'function') initContact();
