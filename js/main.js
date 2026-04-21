@@ -21,3 +21,4 @@ if (typeof initWishlist === 'function') initWishlist();
 if (typeof initQuickAdd === 'function') initQuickAdd();
 if (typeof initNewsletter === 'function') initNewsletter();
 if (typeof initContact === 'function') initContact();
+if (typeof initHeroEffects === 'function') initHeroEffects();

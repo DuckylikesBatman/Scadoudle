@@ -467,6 +467,7 @@ body.cart-drawer-on {
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   height: 520px;
+  will-change: transform;
 }
 
 /* Big image */
@@ -608,6 +609,30 @@ body.cart-drawer-on {
 @keyframes riseIn {
   from { opacity: 0; transform: translateY(22px) }
   to   { opacity: 1; transform: none }
+}
+@keyframes mosaicInRight {
+  from { opacity: 0; transform: translateX(56px) scale(0.95) }
+  to   { opacity: 1; transform: none }
+}
+@keyframes mosaicInTopRight {
+  from { opacity: 0; transform: translate(36px, -40px) scale(0.95) }
+  to   { opacity: 1; transform: none }
+}
+@keyframes mosaicInBottomRight {
+  from { opacity: 0; transform: translate(36px, 40px) scale(0.95) }
+  to   { opacity: 1; transform: none }
+}
+.mosaic-cell:nth-child(1) {
+  opacity: 0;
+  animation: mosaicInRight .95s .28s var(--ease) forwards;
+}
+.mosaic-cell:nth-child(2) {
+  opacity: 0;
+  animation: mosaicInTopRight .85s .46s var(--ease) forwards;
+}
+.mosaic-cell:nth-child(3) {
+  opacity: 0;
+  animation: mosaicInBottomRight .85s .6s var(--ease) forwards;
 }
 
 /* ═══════════════════════════════════════════
